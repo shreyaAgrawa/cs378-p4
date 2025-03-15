@@ -147,6 +147,7 @@ const MusicApp = () => {
             }
           })
         );
+        setSelectedTag(searchTerm);
         setTopTracks(detailedTracks.slice(0, 10)); // Take the top 10 tracks with playcounts
       }
     } catch (error) {
@@ -193,9 +194,24 @@ const MusicApp = () => {
 
       {/* Tag Buttons */}
       <div className="buttons-container">
-        <button onClick={() => handleTagClick("disco")}>Disco</button>
-        <button onClick={() => handleTagClick("pop")}>Pop</button>
-        <button onClick={() => handleTagClick("jazz")}>Jazz</button>
+        <button
+          onClick={() => handleTagClick("disco")}
+          className={selectedTag === "disco" ? "selected" : ""}
+        >
+          Disco
+        </button>
+        <button
+          onClick={() => handleTagClick("pop")}
+          className={selectedTag === "pop" ? "selected" : ""}
+        >
+          Pop
+        </button>
+        <button
+          onClick={() => handleTagClick("jazz")}
+          className={selectedTag === "jazz" ? "selected" : ""}
+        >
+          Jazz
+        </button>
         {/* Add more tags as needed */}
       </div>
 
@@ -219,7 +235,7 @@ const MusicApp = () => {
 
       {/* Display Top Tracks for tag search */}
       <div className="top-tracks-container">
-        <h2>Top Tracks for {selectedTag.charAt(0).toUpperCase() + selectedTag.slice(1)}</h2> {/* Display selected tag */}
+        <h2>Top Tracks</h2>
         <ul className="top-tracks-list">
           {topTracks.map((track, index) => (
             <li key={track.name}>

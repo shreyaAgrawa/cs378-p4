@@ -44,6 +44,12 @@ button {
     transition: background 0.3s ease-in-out;
 }
 
+button.selected {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+
 button:hover {
     background-color: #a0815c; /* Darker brown on hover */
 }
