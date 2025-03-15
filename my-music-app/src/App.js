@@ -219,7 +219,7 @@ const MusicApp = () => {
 
       {/* Display Top Tracks for tag search */}
       <div className="top-tracks-container">
-        <h2>Top Tracks</h2>
+        <h2>Top Tracks for {selectedTag.charAt(0).toUpperCase() + selectedTag.slice(1)}</h2> {/* Display selected tag */}
         <ul className="top-tracks-list">
           {topTracks.map((track, index) => (
             <li key={track.name}>
