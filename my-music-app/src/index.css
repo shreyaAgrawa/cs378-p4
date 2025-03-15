@@ -1,0 +1,16 @@
+/* Global resets and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e5; /* Beige background color */
+    color: #333;
+  }
+  
+  /* Import your main custom styles */
+  @import './styles.css';
+  

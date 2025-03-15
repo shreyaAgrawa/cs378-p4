@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif; /* Elegant and classic font */
+    background-color: #f8f4e5; /* Soft beige background */
+    color: #5a4632; /* Warm brown text */
+}
+
+/* Header */
+.header {
+    background-color: #8b6f47; /* Warm brown tone */
+    color: #fdf8f2; /* Soft candlelight glow */
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #c4a484; /* Soft vintage brown */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #a0815c; /* Darker brown on hover */
+}
+
+/* Search bar */
+.input-container {
+    gap: 20px; /* Adds spacing between input and button */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-container input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #c4a484;
+    border-radius: 8px;
+    background-color: #fdf8f2;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #5a4632;
+}
+
+.input-container button {
+    padding: 12px;
+    background-color: #8b6f47;
+    border-radius: 8px;
+}
+
+/* Error message */
+.error-popup {
+    background-color: #b85042; /* Warm muted red */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Top tracks list */
+.top-tracks-container {
+    background-color: #fdf8f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-tracks-list {
+    list-style: none;
+    padding: 0;
+}
+
+.top-tracks-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #c4a484;
+    font-size: 20px;
+}
+
+/* Chart */
+.chart-container {
+    background: #f8f4e5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Artist Info Section */
+.artist-info {
+    background-color: #eadfcd; /* Aged parchment color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Decorative elements */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Subtle paper texture */
+    opacity: 0.3;
+    z-index: -1;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Example CSS to implement the flame effect */
+.bar {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .bar.hovered {
+    transform: scaleY(1.2); /* Makes the bar 'grow' on hover */
+    background-color: #a32c05; /* Fiery Orange color */
+  }
+  
+  .bar.default {
+    background-color: #fbf5c8; /* Cream Candle Yellow */
+  }
+  
